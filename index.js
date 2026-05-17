@@ -1,7 +1,9 @@
 const express = require("express");
+const cors = require("cors");
 const users = require("./MOCK_DATA.json")
 
 const app = express();
+app.use(cors()); // <-- enable CORS for all routes
 const PORT = 8000;
 
 // actually here we will define our routes
